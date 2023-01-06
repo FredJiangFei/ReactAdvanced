@@ -6,15 +6,17 @@ import UseReducerRun from './pages/useReducerRun';
 
 function App() {
   return (
-    <Router>
-      <NavBar />
-      <main className="container">
-        <Routes>
-          <Route path="/" element={<HookFlow />} />
-          <Route path="/useReducer" element={<UseReducerRun />} />
-        </Routes>
-      </main>
-    </Router>
+    <div className='mx-4 mt-2'>
+      <Router>
+        <NavBar />
+        <main className="container">
+          <Routes>
+            <Route path="/" element={<HookFlow />} />
+            <Route path="/useReducer" element={<UseReducerRun />} />
+          </Routes>
+        </main>
+      </Router>
+    </div>
   );
 }
 
