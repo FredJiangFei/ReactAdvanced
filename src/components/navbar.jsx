@@ -8,6 +8,7 @@ const routes = [
   { to: '/useDebugValue', text: 'useDebugValue' },
   { to: '/useImperativeHandle', text: 'useImperativeHandle' },
   { to: '/contextModule', text: 'contextModule' },
+  { to: '/compoundComponents', text: 'compoundComponents' },
 ];
 
 class NavBar extends Component {
