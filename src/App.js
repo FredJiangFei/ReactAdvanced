@@ -6,6 +6,7 @@ import UseReducerRun from './pages/useReducerRun';
 import UseLayoutEffect from './pages/useLayoutEffect';
 import UseDebugValue from './pages/useDebugValue';
 import UseImperativeHandle from './pages/useImperativeHandle';
+import ContextModule from './pages/ContextModule/contextModule';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/useLayoutEffect" element={<UseLayoutEffect />} />
             <Route path="/useDebugValue" element={<UseDebugValue />} />
             <Route path="/useImperativeHandle" element={<UseImperativeHandle />} />
+            <Route path="/contextModule" element={<ContextModule />} />
           </Routes>
         </main>
       </Router>

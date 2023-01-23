@@ -7,6 +7,7 @@ const routes = [
   { to: '/useLayoutEffect', text: 'useLayoutEffect' },
   { to: '/useDebugValue', text: 'useDebugValue' },
   { to: '/useImperativeHandle', text: 'useImperativeHandle' },
+  { to: '/contextModule', text: 'contextModule' },
 ];
 
 class NavBar extends Component {
