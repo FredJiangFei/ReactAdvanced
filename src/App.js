@@ -8,6 +8,7 @@ import UseDebugValue from './pages/useDebugValue';
 import UseImperativeHandle from './pages/useImperativeHandle';
 import ContextModule from './pages/ContextModule/contextModule';
 import CompoundComponents from './pages/CompoundComponents/compoundComponents';
+import MyGlobe from './pages/MyGlobe';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/useImperativeHandle" element={<UseImperativeHandle />} />
             <Route path="/contextModule" element={<ContextModule />} />
             <Route path="/compoundComponents" element={<CompoundComponents />} />
+            <Route path="/myGlobe" element={<MyGlobe />} />
           </Routes>
         </main>
       </Router>

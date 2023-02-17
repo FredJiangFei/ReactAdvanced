@@ -9,6 +9,7 @@ const routes = [
   { to: '/useImperativeHandle', text: 'useImperativeHandle' },
   { to: '/contextModule', text: 'contextModule' },
   { to: '/compoundComponents', text: 'compoundComponents' },
+  { to: '/myGlobe', text: 'myGlobe' },
 ];
 
 class NavBar extends Component {
