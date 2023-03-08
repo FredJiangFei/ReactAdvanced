@@ -1,5 +1,7 @@
 import * as React from 'react';
-import Globe from '../globe';
+
+const Globe = React.lazy(() => import(/* webpackPrefetch: true */ '../globe'))
+
 function MyGlobe() {
   const [showGlobe, setShowGlobe] = React.useState(false);
   return (
@@ -22,7 +24,9 @@ function MyGlobe() {
         {' show globe'}
       </label>
       <div style={{ width: 400, height: 400 }}>
-        {showGlobe ? <Globe /> : null}
+        <React.Suspense fallback={<div>loading globe...</div>}>
+          {showGlobe ? <Globe /> : null}
+        </React.Suspense>
       </div>
     </div>
   );
